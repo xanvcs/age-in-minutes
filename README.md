@@ -1,2 +1,2 @@
-# Age Calculaator
+# Age Calculator
  age in minutes calculator
