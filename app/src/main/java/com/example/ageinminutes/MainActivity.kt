@@ -50,10 +50,15 @@ class MainActivity : AppCompatActivity() {
                 val theDate = sdf.parse(selectedDate)
 
                 theDate?.let {
+                    // val selectedDateInMinutes = theDate.time / 86400000
+                    // commented code is conversion for days
+
                     val selectedDateInMinutes = theDate.time / 60000
 
                     val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
                     currentDate?.let{
+                        // val currentDateInMinutes = currentDate.time / 8640000
+
                         val currentDateInMinutes = currentDate.time / 60000
 
                         val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
